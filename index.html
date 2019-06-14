@@ -15,33 +15,34 @@
     <div>
         <form class=form>
             
-        Search Term
-            <br></br>
-            <input class="box" type="text" name="Search Term">
+            <label for="Search Term">Search Term</label>
+            <input class="box" id="search-field" type="text" name="Search Term">
             <br></br>
             
-           Number of Records to Retrieve
-            <br></br>
-            <input class="box" type="text" name="Search Term">
+            <label for="search number">Number of Records to Retrieve</label>
+            <select class="box" name="search number" id="number">
+                <option value="1">1</option>
+                <option value="5" selected>5</option>
+                <option value="10">10</option>
+            </select>
             <br></br>
            
-            Start Year (Optional):
-            <br></br>
-            <input class="box" type="text" name="Search Term">
+            <label for="start-year">Start Year (Optional):</label>
+            <input id="start-year" class="box" type="text" name="start-year">
             <br></br>
             
-            End Year (Optional):
-            <br></br>
-            <input class="box" type="text" name="Search Term">
+            <label for="end-year">End Year (Optional):</label>
+            <input id="end-year" class="box" type="text" name="end-year">
             <br></br>
 
-            <button>Search</button>
-            <button>Clear Results</button>
+            <button id="search">Search</button>
+            <button id="clear">Clear Results</button>
         </form>
     </div>
 
     <div>
-        Top Articles
+        <h1>Top Articles</h1>
+        <div id="articles"></div>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
